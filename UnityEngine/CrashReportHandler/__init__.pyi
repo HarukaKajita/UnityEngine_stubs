@@ -1,0 +1,19 @@
+
+class CrashReportHandler:
+    @classmethod
+    @property
+    def enableCaptureExceptions(cls) -> bool: ...
+    @classmethod
+    @enableCaptureExceptions.setter
+    def enableCaptureExceptions(cls, value: bool) -> bool: ...
+    @classmethod
+    @property
+    def logBufferSize(cls) -> int: ...
+    @classmethod
+    @logBufferSize.setter
+    def logBufferSize(cls, value: int) -> int: ...
+    @staticmethod
+    def GetUserMetadata(key: str) -> str: ...
+    @staticmethod
+    def SetUserMetadata(key: str, value: str) -> None: ...
+

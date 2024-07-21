@@ -1,0 +1,13 @@
+import typing
+from System import Attribute
+
+class MovedFromAttribute(Attribute):
+    @typing.overload
+    def __init__(self, autoUpdateAPI: bool, sourceNamespace: str = ..., sourceAssembly: str = ..., sourceClassName: str = ...) -> None: ...
+    @typing.overload
+    def __init__(self, sourceNamespace: str) -> None: ...
+    @property
+    def IsInDifferentAssembly(self) -> bool: ...
+    @property
+    def TypeId(self) -> typing.Any: ...
+

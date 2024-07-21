@@ -1,0 +1,6 @@
+
+class BootOptions:
+    def __init__(self) -> None: ...
+    @staticmethod
+    def SetXRSDKPreInitLibrary(bootConfigPath: str, libraryName: str) -> None: ...
+

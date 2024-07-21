@@ -1,0 +1,9 @@
+from UnityEngine.XR.WSA import RemoteDeviceVersion
+
+class RemoteSpeechAccess:
+    def __init__(self) -> None: ...
+    @staticmethod
+    def DisableRemoteSpeech() -> None: ...
+    @staticmethod
+    def EnableRemoteSpeech(version: RemoteDeviceVersion) -> None: ...
+
